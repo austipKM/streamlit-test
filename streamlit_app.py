@@ -22,3 +22,10 @@ with st.container():
     slider_data = pd.Series([i for i in range(slider_value)])
 
     st.bar_chart(slider_data, use_container_width=True)
+
+"""## Input chaining """
+with st.container():
+    st.write("Change the first slider. Notice how the second slider's max value changes to be the first slider's value.")
+
+    limit = st.slider('Set limit of Output', 0, 10, 1, 1)
+    st.slider('Output', 0, limit, 0, 1)
