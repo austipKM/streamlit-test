@@ -23,7 +23,7 @@ with st.container():
 
     st.bar_chart(slider_data, use_container_width=True)
 
-"""## Input chaining """
+"""## Input chaining"""
 with st.container():
     st.write("Change the first slider. Notice how the second slider's max value changes to be the first slider's value.")
 
